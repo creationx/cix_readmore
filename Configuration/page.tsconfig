@@ -1,0 +1,11 @@
+mod.wizards.newContentElement {
+    wizardItems {
+        common.elements.cix_readmore {
+            title = Read More Element
+            description = Splits longer texts into preview and full content, with a reveal button.
+            tt_content_defValues.CType = cix_readmore
+            iconIdentifier = content-text
+        }
+        common.show := addToList(cix_readmore)
+    }
+}
