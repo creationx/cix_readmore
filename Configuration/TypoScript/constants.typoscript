@@ -8,7 +8,7 @@ plugin.tx_cixreadmore.settings {
     #cat=CREATIONX Read More/cix_100/10; type=options[plain,bootstrap4,bootstrap5]; label=Render Mode for Content Element;
     renderMode = plain
 
-    #cat=CREATIONX Read More/cix_100/10; type=string; label=Label for the Readmore-Button;
+    #cat=CREATIONX Read More/cix_100/20; type=string; label=Label for the Readmore-Button;
     buttonText = Read more ...
 
     #cat=CREATIONX Read More/cix_110/10; type=string; label=Wrapper Class
