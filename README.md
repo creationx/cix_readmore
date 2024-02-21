@@ -27,9 +27,13 @@ It supports both Bootstrap 4 and Bootstrap 5 templates for styling, or users are
 
 ## Installation
 
-1. Upload the plugin to the `typo3conf/ext` directory of your TYPO3 installation.
-2. Activate the plugin in the TYPO3 backend.
-3. Customize settings and classes in the Constant Editor to configure the plugin as needed.
+1. Install the plugin via Composer by running the following command:
+    ```
+    composer require creationx/cix_readmore
+    ```
+2. Alternatively, upload the plugin to the `typo3conf/ext` directory of your TYPO3 installation.
+3. Activate the plugin in the TYPO3 backend.
+4. Customize settings and classes in the Constant Editor to configure the plugin as needed.
 
 ## License
 
