@@ -1,0 +1,17 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" lang="en">
+
+    <div id="cixreadmore-{data.uid}">
+        <f:if condition="{data.cix_readmore.settings.renderMode} == 'plain'">
+            <f:render partial="Plain" arguments="{data: data}" />
+        </f:if>
+
+        <f:if condition="{data.cix_readmore.settings.renderMode} == 'bootstrap4'">
+            <f:render partial="Bootstrap4" arguments="{data: data}" />
+        </f:if>
+
+        <f:if condition="{data.cix_readmore.settings.renderMode} == 'bootstrap5'">
+            <f:render partial="Bootstrap5" arguments="{data: data}" />
+        </f:if>
+    </div>
+</html>

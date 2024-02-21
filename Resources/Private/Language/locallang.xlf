@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:cix_readmore/Resources/Private/Language/locallang.xlf" date="2020-10-18T18:20:51Z" product-name="cix_readmore">
+        <header/>
+        <body>
+            <trans-unit id="constant_category" resname="constant_category">
+                <source>CREATIONX Readmore Content Element</source>
+            </trans-unit>
+            <trans-unit id="constant_category_general" resname="constant_category_general">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="constant_category_plain" resname="constant_category_plain">
+                <source>Plain Styling</source>
+            </trans-unit>
+            <trans-unit id="constant_category_bs4" resname="constant_category_bs4">
+                <source>Bootstrap 4 Styling</source>
+            </trans-unit>
+            <trans-unit id="constant_category_bs5" resname="constant_category_bs5">
+                <source>Bootstrap 5 Styling</source>
+            </trans-unit>
+            <trans-unit id="contentelement_title" resname="contentelement_title">
+                <source>CREATIONX Readmore Content Element</source>
+            </trans-unit>
+            <trans-unit id="tt_content.cix_readmore_text1" resname="tt_content.cix_readmore_text1">
+                <source>Short Text</source>
+            </trans-unit>
+            <trans-unit id="tt_content.cix_readmore_text2" resname="tt_content.cix_readmore_text2">
+                <source>Long Text</source>
+            </trans-unit>
+            <trans-unit id="tt_content.cix_readmore_button" resname="tt_content.cix_readmore_button">
+                <source>More Link Label</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

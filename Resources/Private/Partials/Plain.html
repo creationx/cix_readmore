@@ -1,0 +1,22 @@
+<f:if condition="{data.header_layout} != '100'">
+    <f:if condition="{data.header_layout} == '0'">
+        <f:then>
+            <div class="cixreadmore-header">{data.header}</div>
+        </f:then>
+        <f:else>
+            <h{data.header_layout} class="cixreadmore-header">{data.header}</h{data.header_layout}>
+        </f:else>
+    </f:if>
+</f:if>
+
+<f:if condition="{data.subheader}">
+    <div class="cixreadmore-subheader">{data.subheader}</div>
+</f:if>
+
+<div class="cixreadmore-short_text">{data.cix_readmore_text1}</div>
+
+<a href="#" class="cixreadmore-button" data-id="{data.uid}">
+    {data.cix_readmore_button}
+</a>
+
+<div class="cixreadmore-long_text cix-hidden" id="cixreadmore-long_text_{data.uid}"><f:format.html>{data.cix_readmore_text2}</f:format.html></div>

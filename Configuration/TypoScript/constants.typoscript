@@ -1,0 +1,63 @@
+plugin.tx_cixreadmore.settings {
+    #customcategory=cixreadmore=LLL:EXT:cix_readmore/Resources/Private/Language/locallang.xlf:constant_category
+    #customsubcategory=general=LLL:EXT:cix_readmore/Resources/Private/Language/locallang.xlf:constant_category_general
+    #cat=cixreadmore/general/a; type=options[plain,bootstrap4,bootstrap5]; label=Render Mode for Content Element;
+    renderMode = plain
+
+    #cat=cixreadmore/general/a; type=string; label=Label for the Readmore-Button;
+    buttonText = Read more ...
+
+    plain {
+            #customsubcategory=plain=LLL:EXT:cix_readmore/Resources/Private/Language/locallang.xlf:constant_category_plain
+            #cat=cixreadmore/plain/b; type=string; label=Wrapper Class
+            wrapperClass =
+            #cat=cixreadmore/plain/b; type=string; label=Container Class
+            containerClass =
+            #cat=cixreadmore/plain/b; type=string; label=Header Class
+            headerClass =
+            #cat=cixreadmore/plain/b; type=string; label=Sub-Header Class
+            subHeaderClass =
+            #cat=cixreadmore/plain/b; type=string; label=Shorttext Class
+            shortTextClass =
+            #cat=cixreadmore/plain/b; type=string; label=Longtext Class
+            longTextClass =
+            #cat=cixreadmore/plain/b; type=string; label=Button Class
+            buttonClass =
+        }
+
+    bootstrap4 {
+        #customsubcategory=bootstrap4=LLL:EXT:cix_readmore/Resources/Private/Language/locallang.xlf:constant_category_bs4
+        #cat=cixreadmore/bootstrap4/c; type=string; label=Wrapper Class
+        wrapperClass =
+        #cat=cixreadmore/bootstrap4/c; type=string; label=Container Class
+        containerClass = border border-light p-4
+        #cat=cixreadmore/bootstrap4/c; type=string; label=Header Class
+        headerClass = h3 mb-2
+        #cat=cixreadmore/bootstrap4/c; type=string; label=Sub-Header Class
+        subHeaderClass = h5 mb-2
+        #cat=cixreadmore/bootstrap4/c; type=string; label=Shorttext Class
+        shortTextClass =
+        #cat=cixreadmore/bootstrap4/c; type=string; label=Longtext Class
+        longTextClass = p-4
+        #cat=cixreadmore/bootstrap4/c; type=string; label=Button Class
+        buttonClass = btn btn-primary mt-4
+    }
+
+    bootstrap5 {
+        #customsubcategory=bootstrap5=LLL:EXT:cix_readmore/Resources/Private/Language/locallang.xlf:constant_category_bs5
+        #cat=cixreadmore/bootstrap5/d; type=string; label=Wrapper Class
+        wrapperClass =
+        #cat=cixreadmore/bootstrap5/d; type=string; label=Container Class
+        containerClass = border-1 p-4
+        #cat=cixreadmore/bootstrap5/d; type=string; label=Header Class
+        headerClass = h3 mb-2
+        #cat=cixreadmore/bootstrap5/d; type=string; label=Sub-Header Class
+        subHeaderClass = h5 mb-2
+        #cat=cixreadmore/bootstrap5/d; type=string; label=Shorttext Class
+        shortTextClass =
+        #cat=cixreadmore/bootstrap5/d; type=string; label=Longtext Class
+        longTextClass = p-4
+        #cat=cixreadmore/bootstrap5/d; type=string; label=Button Class
+        buttonClass = btn btn-primary mt-4
+    }
+}

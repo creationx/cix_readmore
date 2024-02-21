@@ -1,0 +1,27 @@
+<f:debug>{data.cix_readmore.settings.bootstrap5}</f:debug>
+
+
+<div class="{data.cix_readmore.settings.bootstrap5.containerClass}">
+    <f:if condition="{data.header_layout} != '100'">
+        <f:if condition="{data.header_layout} == '0'">
+            <f:then>
+                <div class="cixreadmore-header {data.cix_readmore.settings.bootstrap5.headerClass}">{data.header}</div>
+            </f:then>
+            <f:else>
+                <h{data.header_layout} class="cixreadmore-header {data.cix_readmore.settings.bootstrap5.headerClass}">{data.header}</h{data.header_layout}>
+            </f:else>
+        </f:if>
+    </f:if>
+
+    <f:if condition="{data.subheader}">
+        <div class="cixreadmore-subheader {data.cix_readmore.settings.bootstrap5.subHeaderClass}">{data.subheader}</div>
+    </f:if>
+
+    <div class="cixreadmore-short_text {data.cix_readmore.settings.bootstrap5.shortTextClass}">{data.cix_readmore_text1}</div>
+
+    <a href="#cixreadmore-long_text_{data.uid}" class="cixreadmore-button {data.cix_readmore.settings.bootstrap5.buttonClass}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="cixreadmore-long_text_{data.uid}">
+        {data.cix_readmore_button}
+    </a>
+
+    <div class="collapse cixreadmore-long_text {data.cix_readmore.settings.bootstrap5.longTextClass}" id="cixreadmore-long_text_{data.uid}"><f:format.html>{data.cix_readmore_text2}</f:format.html></div>
+</div>

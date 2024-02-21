@@ -1,0 +1,59 @@
+plugin.tx_cixreadmore {
+    settings {
+        renderMode = {$plugin.tx_cixreadmore.settings.renderMode}
+        buttonText = {$plugin.tx_cixreadmore.settings.buttonText}
+
+
+        plain {
+            wrapperClass = {$plugin.tx_cixreadmore.settings.plain.wrapperClass}
+            containerClass = {$plugin.tx_cixreadmore.settings.plain.containerClass}
+            headerClass = {$plugin.tx_cixreadmore.settings.plain.headerClass}
+            subHeaderClass = {$plugin.tx_cixreadmore.settings.plain.subHeaderClass}
+            shortTextClass = {$plugin.tx_cixreadmore.settings.plain.shortTextClass}
+            longTextClass = {$plugin.tx_cixreadmore.settings.plain.longTextClass}
+            buttonClass = {$plugin.tx_cixreadmore.settings.plain.buttonClass}
+        }
+
+        bootstrap4 {
+            wrapperClass = {$plugin.tx_cixreadmore.settings.bootstrap4.wrapperClass}
+            containerClass = {$plugin.tx_cixreadmore.settings.bootstrap4.containerClass}
+            headerClass = {$plugin.tx_cixreadmore.settings.bootstrap4.headerClass}
+            subHeaderClass = {$plugin.tx_cixreadmore.settings.bootstrap4.subHeaderClass}
+            shortTextClass = {$plugin.tx_cixreadmore.settings.bootstrap4.shortTextClass}
+            longTextClass = {$plugin.tx_cixreadmore.settings.bootstrap4.longTextClass}
+            buttonClass = {$plugin.tx_cixreadmore.settings.bootstrap4.buttonClass}
+        }
+
+
+        bootstrap5 {
+            wrapperClass = {$plugin.tx_cixreadmore.settings.bootstrap5.wrapperClass}
+            containerClass = {$plugin.tx_cixreadmore.settings.bootstrap5.containerClass}
+            headerClass = {$plugin.tx_cixreadmore.settings.bootstrap5.headerClass}
+            subHeaderClass = {$plugin.tx_cixreadmore.settings.bootstrap5.subHeaderClass}
+            shortTextClass = {$plugin.tx_cixreadmore.settings.bootstrap5.shortTextClass}
+            longTextClass = {$plugin.tx_cixreadmore.settings.bootstrap5.longTextClass}
+            buttonClass = {$plugin.tx_cixreadmore.settings.bootstrap5.buttonClass}
+        }
+    }
+}
+
+tt_content.cix_readmore =< lib.contentElement
+tt_content.cix_readmore {
+    templateName = CixReadmore
+    layoutRootPaths.0 = EXT:cix_readmore/Resources/Private/Layouts
+    partialRootPaths.0 = EXT:cix_readmore/Resources/Private/Partials
+    templateRootPaths.0 = EXT:cix_readmore/Resources/Private/Templates
+    dataProcessing.10 = Creationx\CixReadmore\DataProcessing\RenderContentElement
+}
+
+
+["{$plugin.tx_cixreadmore.settings.renderMode}" == "plain"]
+    page {
+        includeCSS {
+            cixReadmorePlain = EXT:cix_readmore/Resources/Public/Css/plain.css
+        }
+        includeJSFooter {
+            cixReadmorePlain = EXT:cix_readmore/Resources/Public/JavaScript/plain.js
+        }
+    }
+[global]

@@ -1,0 +1,32 @@
+{
+    "name": "creationx/cix_readmore",
+    "description": "Splits longer texts into preview and full content, with a reveal button. It offers customizable templates for easy styling.",
+    "type": "typo3-cms-extension",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "typo3/cms-core": "^10.4 || ^11.5 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Creationx\\CixReadmore\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "cix_readmore"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martin Hesse",
+            "role": "Developer",
+            "email": "info@creationx.de",
+            "homepage": "https://creationx.de"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/creationx/cix_readmore"
+    }
+}
