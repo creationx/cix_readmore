@@ -11,7 +11,6 @@ The cix_readmore TYPO3 Plugin allows users to split longer texts into two parts:
 
 The plugin is compatible with TYPO3 versions 10 through 12.
 
-
 ## Templates
 
 The plugin offers various templates to choose from:
@@ -35,6 +34,7 @@ It supports both Bootstrap 4 and Bootstrap 5 templates for styling, or users are
 3. Activate the plugin in the TYPO3 backend.
 4. Customize settings and classes in the Constant Editor to configure the plugin as needed.
 
-## License
 
-This project is licensed under the [GPL](LICENSE).
+## Credits
+
+This extension was created by Martin Hesse for [CREATIONX GmbH](https://creationx.de).
